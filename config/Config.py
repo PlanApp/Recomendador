@@ -9,10 +9,10 @@ import psycopg2
 class DataBase:
         def __init__(self):
 		try:
-	                DBNAME="planapp"
-	                USER="planapp"
-	                HOST="localhost"
-	                PASSWD="abcdef1234"
+	                DBNAME="@"
+	                USER="@"
+	                HOST="@"
+	                PASSWD="@"
 
 			self.conn = psycopg2.connect("dbname='%s' user='%s'  host='%s' password='%s'" %(DBNAME, USER, HOST,PASSWD))
 	                self.cur = self.conn.cursor()
